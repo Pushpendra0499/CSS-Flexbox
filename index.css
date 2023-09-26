@@ -7,16 +7,29 @@
     align-items: center; /* Vertical centering */
     flex-wrap: wrap;     /* the next row/column if there's insufficient space (nowrap, wrap, wrap-reverse). */
     align-content: space-between; /* Aligns multiple lines of flex items*/
-    flex-grow:2;
-    
+  
     background-color: rgb(230, 230, 26);
     gap: 20px;
     padding: 5px;
     }
 
   .item{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    flex: 1 0 auto; /* flex-grow, flex-shrink, flex-basis */
+    order: 2;
+
     border:1px solid black;
     height: 100px;
     width: 100px;
     background-color: aqua;
+
   }
+  /* **************** Note ***************
+
+"Remember, practice makes perfect! 💪 
+Don't be afraid to try CSS Flexbox properties over and over again. The more you code, the better you'll get.
+Your skills will take off! 🚀 
+
+*/
