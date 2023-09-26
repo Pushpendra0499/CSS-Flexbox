@@ -1,0 +1,22 @@
+ .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row; /* Default value */
+
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    flex-wrap: wrap;     /* the next row/column if there's insufficient space (nowrap, wrap, wrap-reverse). */
+    align-content: space-between; /* Aligns multiple lines of flex items*/
+    flex-grow:2;
+    
+    background-color: rgb(230, 230, 26);
+    gap: 20px;
+    padding: 5px;
+    }
+
+  .item{
+    border:1px solid black;
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+  }
